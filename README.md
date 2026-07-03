@@ -7,8 +7,15 @@
 - **URL:** https://parkh37t.github.io/meritz-lms/
 - 진입 파일: 루트 [`index.html`](./index.html)
 
-> GitHub Pages는 `main` 브랜치에 푸시될 때 GitHub Actions 워크플로
-> ([`.github/workflows/pages.yml`](.github/workflows/pages.yml))가 자동으로 활성화·배포합니다.
+### GitHub Pages 활성화 (최초 1회)
+
+저장소 소유자가 아래 설정을 한 번만 해주면 `main`의 루트가 그대로 배포됩니다.
+
+1. **Settings → Pages** 이동
+2. **Build and deployment → Source: `Deploy from a branch`**
+3. **Branch: `main`**, 폴더: **`/ (root)`** 선택 후 **Save**
+
+이후 `main`에 푸시할 때마다 자동으로 재배포됩니다.
 
 ## 구성
 
@@ -16,8 +23,7 @@
 | --- | --- |
 | `index.html` | 정적 사이트 진입 파일 (중간보고 슬라이드 덱, 자체 완결형 HTML) |
 | `메리츠화재 TM LMS 중간보고-handoff/preview.html` | 전달받은 원본 핸드오프 소스 (보존용) |
-| `.github/workflows/pages.yml` | GitHub Pages 자동 배포 워크플로 |
-| `.nojekyll` | Jekyll 처리 비활성화 |
+| `.nojekyll` | Jekyll 처리 비활성화 (파일을 있는 그대로 서빙) |
 
 ## 슬라이드 구성 (20장)
 
